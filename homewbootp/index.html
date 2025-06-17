@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-5 d-none d-lg-block mainhead topheading">
+        <div class="row gx-0"> 
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center cdetails" style="height:45px;">
+                    <a href="mailto:example@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                            </path>
+                        </svg> &nbsp;
+                        example@gmail.com</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6">
+                            </path>
+                        </svg> &nbsp; Avenue Suite 207
+                        Milwaukee</a>
+                    <a href="tel:414522-9040"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z">
+                            </path>
+                        </svg> &nbsp; (414) 522-9040</a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center icon" style="height:45px; gap: 20px;"><a href="#"> <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                            </path>
+                        </svg></a>
+                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+                            </path>
+                        </svg></a>
+                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                            </path>
+                        </svg></a>
+                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                            </path>
+                        </svg></a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <path
+                                d="M15.5008 17.75L16.7942 19.5205C16.9156 19.7127 17.1489 19.7985 17.3619 19.7224C18.1657 19.4353 20.158 18.6572 21.7984 17.4725C21.9263 17.3801 22.0002 17.2261 21.9992 17.0673C21.9992 8.25 19.5008 5.75 19.5008 5.75C19.5008 5.75 17.5008 4.60213 15.3547 4.25602C15.1436 4.22196 14.9368 4.33509 14.8429 4.52891L14.3979 5.44677C14.3979 5.44677 13.2853 5.21397 12 5.21397C10.7147 5.21397 9.6021 5.44677 9.6021 5.44677L9.15711 4.52891C9.06314 4.33509 8.85644 4.22196 8.64529 4.25602C6.50079 4.60187 4.50079 5.75 4.50079 5.75C4.50079 5.75 2.0008 8.25 2.0008 17.0673C1.9998 17.2261 2.07365 17.3801 2.20159 17.4725C3.84196 18.6572 5.8343 19.4353 6.63806 19.7224C6.85105 19.7985 7.08437 19.7127 7.20582 19.5205L8.50079 17.75"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M17.5008 16.75C17.5008 16.75 15.2057 18.25 12.0008 18.25C8.79587 18.25 6.50079 16.75 6.50079 16.75"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path
+                                d="M17.2508 12.25C17.2508 13.3546 16.4673 14.25 15.5008 14.25C14.5343 14.25 13.7508 13.3546 13.7508 12.25C13.7508 11.1454 14.5343 10.25 15.5008 10.25C16.4673 10.25 17.2508 11.1454 17.2508 12.25Z"
+                                stroke="currentColor" stroke-width="1.5"></path>
+                            <path
+                                d="M10.2508 12.25C10.2508 13.3546 9.46729 14.25 8.50079 14.25C7.5343 14.25 6.75079 13.3546 6.75079 12.25C6.75079 11.1454 7.5343 10.25 8.50079 10.25C9.46729 10.25 10.2508 11.1454 10.2508 12.25Z"
+                                stroke="currentColor" stroke-width="1.5"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <div class="text-secondary px-4 py-3 banner">
+            <nav id="navbar" class="navbar nav navbar-expand-lg navb2">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <p class="h3 text-white logo">
+                            <img src="https://templates.templatedri.com/TemplateTitan-Multipurpose/demo/it-solution/img/icon.png"
+                                alt="" class="img-fluid white">
+                            TechNetify
+                        </p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> <i class="fa-solid fa-bars"></i> </span>
+                    </button>
+                    <div class="collapse navbar-collapse navtext" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="index.html"> Home One </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index-2.html"> Home Two </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index-3.html"> Home Three </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="index-4.html"> Home Four </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Company
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="about.html">About Us </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="team.html">Our Team </a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="team-details.html">Team Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="why-choose-us.html">Whay Choose Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="case-study.html">Case Study</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="case-study-details.html">Case Study Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="error.html">Error</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="it-service.html">It Solution</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html"> Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn-one px-4 navbtn" aria-current="page" href="#home">Get
+                                    Started</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="col-lg-9 mx-auto pt-5 text-1">
+                <h5>
+                    Discover a better way to do business with our comprehensive IT
+                    services
+                </h5>
+                <h1 class="my-4 fw-bold">
+                    Drive Growth and Innovation with Our <br>
+                    <p>Comprehensive IT Services</p>
+                </h1>
+
+            </div>
+            <div class="my-5">
+                <a href="#" class="btn-one me-sm-4 me-0">Explore Our Solutions &nbsp;
+                    <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="contact.html" class="btn-two">Contact Us Now &nbsp;
+                    <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="feature pb-5 mb-5 allcard">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="shadow p-4 rounded text-center card-1">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-shield-shaded" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                            </svg>
+                        </div>
+                        <h3>Security</h3>
+                        <p class="mb-0">
+                            Keep your data secure with our top-of-the-line security
+                            features.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shadow p-4 rounded text-center card-1">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-umbrella-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 0a.5.5 0 0 1 .5.5v.514C12.625 1.238 16 4.22 16 8c0 0 0 .5-.5.5-.149 0-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394A3.17 3.17 0 0 0 13 7.5c-.638 0-1.178.213-1.564.434a3.5 3.5 0 0 0-.555.394l-.025.023-.003.003s-.204.146-.353.146-.352-.145-.352-.145l-.004-.004-.025-.023a3.5 3.5 0 0 0-.555-.394 3.3 3.3 0 0 0-1.064-.39V13.5H8h.5v.039l-.005.083a3 3 0 0 1-.298 1.102 2.26 2.26 0 0 1-.763.88C7.06 15.851 6.587 16 6 16s-1.061-.148-1.434-.396a2.26 2.26 0 0 1-.763-.88 3 3 0 0 1-.302-1.185v-.025l-.001-.009v-.003s0-.002.5-.002h-.5V13a.5.5 0 0 1 1 0v.506l.003.044a2 2 0 0 0 .195.726c.095.191.23.367.423.495.19.127.466.229.879.229s.689-.102.879-.229c.193-.128.328-.304.424-.495a2 2 0 0 0 .197-.77V7.544a3.3 3.3 0 0 0-1.064.39 3.5 3.5 0 0 0-.58.417l-.004.004S5.65 8.5 5.5 8.5s-.352-.145-.352-.145l-.004-.004a3.5 3.5 0 0 0-.58-.417A3.17 3.17 0 0 0 3 7.5c-.638 0-1.177.213-1.564.434a3.5 3.5 0 0 0-.58.417l-.004.004S.65 8.5.5 8.5C0 8.5 0 8 0 8c0-3.78 3.375-6.762 7.5-6.986V.5A.5.5 0 0 1 8 0" />
+                            </svg>
+                        </div>
+                        <h3>Scalability</h3>
+                        <p class="mb-0">
+                            As your business grows, so do your IT needs. Our solution is
+                            designed to scale with you
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shadow p-4 rounded text-center card-1">
+                        <div class="icon">
+                            <svg xmlns=" http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                        <h3>Reliability</h3>
+                        <p class="mb-0">
+                            Downtime is not an option. Our solution is built to deliver
+                            maximum uptime and reliability
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shadow p-4 rounded text-center card-1">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg>
+                        </div>
+                        <h3>Ease of Use</h3>
+                        <p class="mb-0">
+                            Our intuitive interface makes it easy to manage your IT
+                            infrastructure, even if you're not a tech expert.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-3 py-sm-5 my-5 about">
+        <div class="row py-5 my-5">
+            <div class="col-12 col-lg-6">
+                <div class="img-box">
+                    <img src="https://templates.templatedri.com/TemplateTitan-Multipurpose/demo/it-solution/img/angle.png"
+                        alt="Angle Image" class="img-fluid one py-4"
+                        style="width: 80%;transform: rotate(45deg);position: relative;">
+                    <img src="https://templates.templatedri.com/TemplateTitan-Multipurpose/demo/it-solution/img/about.jpg"
+                        alt="About Us Image" class="img-fluid two">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="fw-bold cor2" style="color: #110050;">About Us <span class="bor ms-3"></span></p>
+                <h2 class="h1 fw-bold">
+                    Empowering Your Business with Innovative
+                    <span class="cor" style="color: #e95107;">Technology Solutions</span>
+                </h2>
+                <h5 class="lh-lg mb-4">
+                    Expert IT Consulting, Software Development, Cloud Solutions, and
+                    More at TechNetify IT Solutions.
+                </h5>
+
+                <p>
+                    Welcome to TechNetify IT Solutions, your one-stop-shop for all your
+                    technology needs. We are a team of highly skilled and experienced IT
+                    professionals who are dedicated to delivering innovative and
+                    reliable solutions that meet the unique needs of your business.
+                </p>
+                <p>
+                    At TechNetify, we understand that technology is constantly evolving,
+                    and keeping up with the latest trends and advancements can be
+                    challenging. That's why we're here to help. Our team of experts
+                    stays up-to-date with the latest developments in the tech industry,
+                    so you can rest assured that you're getting the best possible advice
+                    and solutions.
+                </p>
+
+                <div class="mt-5">
+                    <a href="#" class="btn-one">More Details &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="services my-4 py-5" style="background-color: #110050; height: auto;">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 text-center">
+                    <p class="fw-bold text-white mt-4 fs-4">Services<span class="bor2 ms-3"></span>
+                    </p>
+                    <h2 class="h1 mb-5 text-white">Streamline Your Business with our IT Solutions</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Services</h5>
+                            <p class="card-text">With our cloud services, you can securely store, manage, and access
+                                your business data from anywhere in the world. Our cloud solutions are scalable and
+                                customizable to meet your specific business needs.</p>
+                        </div>
+                        <i class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z" />
+                            </svg></i>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Protect your business against cyber threats with our comprehensive
+                                cybersecurity solutions. We offer a range of services including threat detection,
+                                incident response, and security awareness training.</p>
+                        </div>
+                        <i class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                fill="currentColor" class="bi bi-file-earmark-lock2-fill" viewBox="0 0 16 16">
+                                <path d="M7 7a1 1 0 0 1 2 0v1H7z" />
+                                <path
+                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0" />
+                            </svg></i>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Network Solutions</h5>
+                            <p class="card-text">Our network solutions are designed to keep your business connected
+                                and
+                                running smoothly. From setting up and maintaining your network infrastructure to
+                                providing reliable internet connectivity, we have you covered.</p>
+                        </div>
+                        <i class="icon-box card-3"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                fill="currentColor" class="bi bi-diagram-2-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5zm-3 8A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5z" />
+                            </svg></i>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Custom software development is our specialty. We work closely with our
+                                clients to create software that meets their unique business requirements. Our developers
+                                are skilled in a variety of programming languages and frameworks.</p>
+                        </div>
+                        <i class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55"
+                                fill="currentColor" class="bi bi-snow" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793V8.866l-3.4 1.963-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495L7 8 3.6 6.037l-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849L7.5 7.134V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 1 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v3.927l3.4-1.963.496-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l3.4 1.963 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-3.4-1.963v3.927l1.353 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z" />
+                            </svg></i>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">IT Consulting</h5>
+                            <p class="card-text">Get expert advice and guidance on your IT strategy with our IT
+                                consulting services. We offer assessments, audits, and roadmaps to help you optimize
+                                your IT investments and improve business performance.
+
+                            </p>
+                        </div>
+                        <i class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                            </svg></i>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center cardt">
+                        <i class="bi bi-arrow-right"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Managed Services</h5>
+                            <p class="card-text">Take the hassle out of IT management with our managed services. We
+                                offer proactive monitoring, maintenance, and support for your IT systems, ensuring they
+                                are always up-to-date and performing at their best.</p>
+                        </div>
+                        <i class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            </svg></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 my-5 team">
+        <div class="row g-4">
+            <div class="col-lg-12 text-center">
+                <p class="fw-bold">Team Member<span class="bor2 ms-3"></span></p>
+                <h2 class="h1 mb-5">Meet Our Team</h2>
+            </div>
+            <div class="col-lg-3">
+                <div class="t-card mincard">
+                    <img class="card-img-top" src="team1.jpg" alt="Card image cap">
+                    <div class="card-body incard position-relative text-center">
+                        <h4>John Smith</h4>
+                        <p class="cor2" style="color: #110050;">Marketing Manager</p>
+                        <div class="social mt-2 cicon">
+                            <a href="#"> <i class="bi bi-facebook"></i></a>
+                            <a href="#"> <i class="bi bi-twitter"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin"></i></a>
+                            <a href="#"> <i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="t-card mincard">
+                    <img class="card-img-top" src="team2.jpg" alt="Card image cap">
+                    <div class="card-body incard position-relative text-center">
+                        <h4>David Nguyen</h4>
+                        <p class="cor2" style="color: #110050;">Software Engineer</p>
+                        <div class="social mt-2 cicon">
+                            <a href="#"> <i class="bi bi-facebook"></i></a>
+                            <a href="#"> <i class="bi bi-twitter"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin"></i></a>
+                            <a href="#"> <i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="t-card mincard">
+                    <img class="card-img-top" src="team3.jpg" alt="Card image cap">
+                    <div class="card-body incard position-relative text-center">
+                        <h4>Sarah Lee</h4>
+                        <p class="cor2" style="color: #110050;">Product Designer</p>
+                        <div class="social mt-2 cicon">
+                            <a href="#"> <i class="bi bi-facebook"></i></a>
+                            <a href="#"> <i class="bi bi-twitter"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin"></i></a>
+                            <a href="#"> <i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="t-card mincard">
+                    <img class="card-img-top" src="team4.jpg" alt="Card image cap">
+                    <div class="card-body incard position-relative text-center">
+                        <h4>Emily Chen</h4>
+                        <p class="cor2" style="color: #110050;">Customer Support Specialist</p>
+                        <div class="social mt-2 cicon">
+                            <a href="#"> <i class="bi bi-facebook"></i></a>
+                            <a href="#"> <i class="bi bi-twitter"></i></a>
+                            <a href="#"> <i class="bi bi-linkedin"></i></a>
+                            <a href="#"> <i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 my-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class="fw-bold">Features Case <span class="bor2 ms-3"></span></p>
+                <h2 class="h1 mb-5">Our Working Process</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3">
+                <div class="process-card cardno">
+                    <span>1</span>
+                    <div class="mt-5">
+                        <h3>Discover</h3>
+                        <p>
+                            We ask questions to understand your unique business needs and
+                            give you a chance to get to know us and how we can help you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-card cardno">
+                    <span>2</span>
+                    <div class="mt-5">
+                        <h3>Access</h3>
+                        <p>
+                            An IT specialist will make an on-site visit to review all IT
+                            hardware, overall security, and logical structure of your
+                            network.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-card cardno">
+                    <span>3</span>
+                    <div class="mt-5">
+                        <h3>Advise</h3>
+                        <p>
+                            Our team will collect and review all relevant information, then
+                            present to you a comprehensive plan for the future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-card cardno">
+                    <span>4</span>
+                    <div class="mt-5">
+                        <h3>Onboard</h3>
+                        <p>
+                            Once we get your approval, the team will implement the agreed
+                            upon solution and measure the results. From there, we will make
+                            new recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="counter countbox">
+        <div class="container p-5">
+            <div class="row g-4 text-center">
+                <div class="col-lg-3">
+                    <div class="count-card scard">
+                        <div class="icon">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <p class="display-1 fw-bold text-white">280</p>
+                        <p class="h5 text-white">Our Branchs</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="count-card mt-5 scard2">
+                        <div class="icon color-2">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <p class="display-1 fw-bold text-white">782</p>
+                        <p class="h5 text-white">Projects Done</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="count-card scard">
+                        <div class="icon color-3">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <p class="display-1 fw-bold text-white">1M</p>
+                        <p class="h5 text-white">Happy Users</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="count-card mt-5 scard2">
+                        <div class="icon color-4">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <p class="display-1 fw-bold text-white">100</p>
+                        <p class="h5 text-white">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="caedboxl py-5" style="background-color: rgb(238, 239, 244);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="fw-bold">Testimonial <span class="bor2 ms-3"></span></p>
+                    <h2 class="h1 mb-5">What Says Our Happy Clients</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <div class="card-body" style="padding: 40px;">
+                            <div class="rating mb-2 uicon">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Amazing product</h4>
+                            <p class="card-text text-black" style="font-weight: 400; font-size: 16px;">
+                                On your bike mate for quaint burke naff daft bite, your arm give
+                                us bell blimey barmy crack school.
+                            </p>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="user-1.png" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-0 pb-0" style="font-size: 1.25rem;">Fig Nelson</h5>
+                                    <p style="font-weight: 400">Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <div class="card-body" style="padding: 40px;">
+                            <div class="rating mb-2 uicon">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Top notch support</h4>
+                            <p class="card-text text-black" style="font-weight: 400; font-size: 16px;">
+                                On your bike mate for quaint burke naff daft bite, your arm give
+                                us bell blimey barmy crack school.
+
+                            </p>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="user-2.png" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-0 pb-0" style="font-size: 1.25rem;">Eleanor Fant</h5>
+                                    <p style="font-weight: 400">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100  border-0">
+                        <div class="card-body" style="padding: 40px;">
+                            <div class="rating mb-2 uicon">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Featured customer</h4>
+                            <p class="card-text text-black" style="font-weight: 400; font-size: 16px;">
+                                On your bike mate for quaint burke naff daft bite, your arm give
+                                us bell blimey barmy crack school.
+                            </p>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="user-3.png" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-0 pb-0" style="font-size: 1.25rem;">Hilary Ouse</h5>
+                                    <p style="font-weight: 400">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer py-5" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="pe-5">
+                        <h2>
+                            <img src="https://templates.templatedri.com/TemplateTitan-Multipurpose/demo/it-solution/img/icon.png"
+                                alt="" class="img-fluid white mb-4" style="width: 50px;"> &nbsp;
+                            TechNetify
+                        </h2>
+                        <p>
+                            We are a team of highly skilled and experienced IT professionals
+                            who are dedicated to delivering innovative and reliable
+                            solutions that meet the unique needs of your business.
+                        </p>
+                        <div class="social ficon">
+                            <a href="#"><i class="bi bi-facebook"></i> </a>
+                            <a href="#"><i class="bi bi-twitter-x"></i> </a>
+                            <a href="#"><i class="bi bi-linkedin"></i> </a>
+                            <a href="#"><i class="bi bi-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="mb-4">Our Services</h4>
+                    <ul>
+                        <li style="font-size: 15px;">
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Marketing
+                                Strategy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Interior
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Digital
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Digital
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Product
+                                Selling
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Product
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-chevron-double-right"></i> &nbsp; Social
+                                Marketing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ps-sm-5 ps-0">
+                        <h4 class="mb-4">Our Services</h4>
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="#">Projects </a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="#">Careers </a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="#">Privacy Policy </a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-double-right"></i> &nbsp;
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="mb-4">Contact Info</h4>
+                    <ul>
+                        <li class="address mb-2">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            818 SW 3RD Ave,#161, <br>
+                            london Portland, OR
+                        </li>
+                        <li class="address mb-2">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@example.com"> info@example.com</a> <br>
+                            <a href="mailto:info@example.com">info@example.com </a>
+                        </li>
+                        <li class="address mb-2">
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:97430057012">+974 30057012 </a> <br>
+                            <a href="tel:97430057012">+974 30007213</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row pt-3">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">© 2024 TechNetify.All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
